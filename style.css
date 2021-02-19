@@ -69,8 +69,18 @@ span::before {
   background: #f0ffad;
   -webkit-transform: scale(0);
           transform: scale(0);
-  -webkit-box-shadow: 0 0 10px #53fde7, 0 0 20px #d847c5, 0 0 40px #c9b1e9, 0 0 60px #53fde7, 0 0 80px #53fd53, 0 0 100px #ebfa65;
-          box-shadow: 0 0 10px #53fde7, 0 0 20px #d847c5, 0 0 40px #c9b1e9, 0 0 60px #53fde7, 0 0 80px #53fd53, 0 0 100px #ebfa65;
+  -webkit-box-shadow: 0 0 10px #53fde7,
+ 0 0 20px #d847c5,
+ 0 0 40px #c9b1e9,
+ 0 0 60px #53fde7,
+ 0 0 80px #53fd53,
+ 0 0 100px #ebfa65;
+          box-shadow: 0 0 10px #53fde7,
+ 0 0 20px #d847c5,
+ 0 0 40px #c9b1e9,
+ 0 0 60px #53fde7,
+ 0 0 80px #53fd53,
+ 0 0 100px #ebfa65;
   border-radius: 50%;
   pointer-events: none;
   -webkit-transition: 0.2s;
@@ -86,8 +96,8 @@ span:hover::before {
 
 .cursor {
   position: relative;
-  width: 6rem;
-  height: 6rem;
+  width: 16rem;
+  height: 16rem;
 }
 
 .cursor .circle {
