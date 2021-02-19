@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  // overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #100b3a1a;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  animation: changeColor 5s linear infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+span {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background: rgb(247, 11, 11);
+  background: rgb(240, 255, 173);
+  transform: scale(0);
+  box-shadow:
+    0 0 10px #53fde7,
+    0 0 20px #d847c5,
+    0 0 40px #c9b1e9,
+    0 0 60px #53fde7,
+    0 0 80px #53fd53,
+    0 0 100px #ebfa65;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+span:hover::before {
+  transform: scale(0.5);
+  transition: 0%;
+}
+
+
+.cursor {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+
+  .circle {
+    position: absolute;
+    top: -115%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-style: dashed;
+    border-width: thin;
+    border-color: #fd9104;
+    border-color: rgb(55, 185, 135);
+    border-color: rgb(24, 216, 223);
+    border-radius: 50%;
+    // background: linear-gradient(rgb(74, 255, 186), rgba(192, 255, 74, 0.4));
+    // animation: circle 2500ms ease-in-out infinite alternate;
+
+  }
+}
